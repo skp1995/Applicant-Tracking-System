@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>        
+        <title>Corpus Folder Path</title>
+        <link type="text/css" href="./css/materialize.css" rel="stylesheet">
+        <link type="text/css" href="./css/materialize.min.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body class="background light-blue lighten-5">
+        <h3 class="brown-text center"> CORPUS FOLDER PATH </h3> <br>
+        <div class="row">
+            <div class="col s12">
+                <div class="card hoverable center deep-purple lighten-5">
+                    <div class="card-content purple-text">
+                        <span class="card-title pink-text center-block"><b>Paths for source folders.</b></span>
+                            <h5> 
+                                You are required to include paths for folders containing related source documents for each of the criteria considered, in the text boxes below.
+                                Please read the instructions carefully before filling the folder paths. Once you are done filling in both folder paths, click Continue.    
+                            </h5>        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="purple-text center col s10">
+            <b> <i> Please note that is required that the sources be in '.pdf' as this format is expected during processing. </i> </b> 
+        </h5>
+        
+        <br> <br>
+        
+        <div class="section">
+            <div class="row container">
+                <form action="corpusServlet" method="post" class="col s12">
+                    <div class="row">    
+                        <div class="col s12">
+                            <div class="card hoverable center deep-purple lighten-5">
+                                <div class="card-content purple-text">
+                                    <span class="card-title pink-text"> <b>Path for source documents per criterion</b> </span>
+                                        <h5> 
+                                            Enter the folder paths for all of the three criteria chosen. 
+                                            Include in the corpus folder any books, guides or reference materials which are universally accepted as pertaining to the given job.
+                                            The corpus can also include magazines and articles.
+                                        </h5>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col s4">
+                            <div class="input-field">
+                                <input id="techpath" type="text" class="validate" name="techpath" required> 
+                                <label for="techpath" class="center"> Criteria1 Folder Path</label> <br> <br>
+                            </div>
+                        </div>
+                        
+                        <div class="col s4">
+                            <div class="input-field">    
+                                <input id="nontechpath" type="text" class="validate" name="nontechpath" required> 
+                                <label for="nontechpath" class="center"> Criteria2 Folder Path</label> <br> <br>
+                            </div>
+                        </div>
+
+                        <div class="col s4">
+                            <div class="input-field">    
+                                <input id="exppath" type="text" class="validate" name="exppath" required> 
+                                <label for="exppath" class="center"> Criteria3 Folder Path</label> <br> <br>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="btn waves-effect waves-light right green accent-4" type="submit" name="action"> Continue
+                        <i class="material-icons right"> </i>                
+                    </button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../js/materialize.min.js"></script>
+    </body>
+</html>

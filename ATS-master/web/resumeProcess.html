@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>        
+        <title>Resume Folder Path</title>
+        <link type="text/css" href="./css/materialize.css" rel="stylesheet">
+        <link type="text/css" href="./css/materialize.min.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body class="background light-blue lighten-5">
+        <h3 class="brown-text center"> RESUME FOLDER PATH </h3> <br>
+        <div class="row">
+            <div class="col s12">
+                <div class="card hoverable center deep-purple lighten-5">
+                    <div class="card-content purple-text">
+                        <span class="card-title pink-text center-block"> <b>Enter the path for the resume folder.</b> </span>
+                            <h5> 
+                                Please enter the path of the folder that contains all of the resumes you want processed.
+                                
+                            </h5>        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h5 class="purple-text center col s10">
+            <b> <i> Please note that is required that the resumes be in '.pdf' as this format is expected during processing. </i> </b> 
+        </h5>        
+        
+        <div class="section">
+            <div class="row container">
+            <form action="resumeServlet" method="post" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="resumepath" type="text" class="validate" name="resumepath" required>
+                        <label for="resumepath" class="center">Folder Path</label>
+                    </div>
+                </div>
+            
+                <button class="btn waves-effect waves-light right green accent-4" type="submit" name="action"> Continue
+                    <i class="material-icons right"> </i>                
+                </button>
+           </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../js/materialize.min.js"></script>
+    </body>
+</html>

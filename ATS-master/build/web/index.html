@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>        
+        <title>Resume Scorer</title>
+        <link type="text/css" href="./css/materialize.css" rel="stylesheet">
+        <link type="text/css" href="./css/materialize.min.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body class="background light-blue lighten-5">
+        <h3 class="brown-text center"> A WEB APPLICATION FOR SCORING RESUMES </h3>
+        <div class="row">
+            <div class="col s12">
+                <div class="card hoverable center deep-purple lighten-5">
+                    <div class="card-content purple-text">
+                        <span class="card-title pink-text"> <b> Welcome! This is a Resume Ranker for use by HR Managers to make the hiring process simpler. </b> </span>
+                            <h5> 
+                                The application that you are running is used to rank a set of resumes. It is assumed that the resumes are in '.pdf' format, as this is most common.
+                                Moreover, this will produce a result with the filename and a score.
+                            </h5>
+                            <h5>
+                                This score is an indicative of how proficient a particular resume is in a particular field and its compatibility with your job description.
+                                Now, you will be required to provide weights for different criteria, in the next page. 
+                                For simplicity, we have taken only 3 criteria, namely Criteria1, Criteria2 and Criteria3.
+                                These criteria are typically independent domains or skills that each have extensive material on their own.
+                            </h5>        
+                            <h5>
+                                It is required that all of the 3 criteria chosen are of utmost importance for the given job. Moreover, it is also necessary to have a set of diverse source documents ready to serve as a corpus for each of these criteria.
+                            </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <div class="row container">
+                    
+                    <div class="col s12">
+                        <div class="card hoverable center deep-purple lighten-5">
+                            <div class="card-content purple-text">
+                                <span class="card-title pink-text"> </span>
+                                    <h5> 
+                                        You will now be taken to the next page on clicking the button below where you are required to input in criteria weights for AHP.
+                                        Click on 'Continue'.
+                                    </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <form action='AHPPage.html' method='post'> 
+                        <button class="btn waves-effect waves-light right green accent-4" type="submit" name="action"> Continue
+                            <i class="material-icons right"> </i>                
+                        </button>
+                    </form>
+            </div>
+        </div>
+    </body>
+</html>

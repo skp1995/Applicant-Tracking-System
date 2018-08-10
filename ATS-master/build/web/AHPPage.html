@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>        
+        <title>AHP Page</title>
+        <link type="text/css" href="./css/materialize.css" rel="stylesheet">
+        <link type="text/css" href="./css/materialize.min.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>   
+    <body class="background light-blue lighten-5">
+        <h3 class="brown-text center"> AHP INPUT </h3>
+        <div class="row">
+            <div class="col s12">
+                <div class="card hoverable center deep-purple lighten-5">
+                    <div class="card-content purple-text">
+                        <span class="card-title pink-text"> <b>This is a page to enter the AHP input.</b> </span>
+                            <h5> 
+                                AHP stands for Analytical Hierarchy Process. 
+                                This is used to determine overall importance of criteria by getting the pairwise importance. 
+                                This is used here to get an accurate idea of the importance of different criteria in a job specification.
+                                Read the table below carefully before answering the questions that follow. 
+                                You are required to fill in an intensity of importance as answers to the questions as dictated by the table.
+                            </h5>     
+                            <h5>
+                                Consider the table below that contains intensity values for comparing any two criteria A and B. It is not strict that you enter these exact values.
+                                You may enter intermediary values if you are unsure about the intensity.
+                                However, it is required that you fill in values that correspond to the given range of values in the table.
+                            </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <table class="centered bordered highlight responsive-table background grey lighten-3" >
+        <thead class="background black lighten-5">
+          <tr class="pink-text center">
+              <th data-field="intensity">Intensity of Importance</th>
+              <th data-field="name">Definition</th>
+              <th data-field="price">Explanation</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="purple-text">
+            <td>0.1111</td>
+            <td>Extreme Importance</td>
+            <td>The evidence favoring B over A is of the highest possible order of affirmation.</td>
+          </tr>                                                
+          <tr class="purple-text">
+            <td>0.1428</td>
+            <td>Very strong Importance</td>
+            <td>B is favored very strongly over A; its dominance is demonstrated in practice.</td>
+          </tr>                                    
+          <tr class="purple-text">
+            <td>0.2</td>
+            <td>Strong Importance</td>
+            <td>Experience and judgment strongly favor element B over A.</td>
+          </tr>                        
+          <tr class="purple-text">
+            <td>0.33</td>
+            <td>Moderate Importance</td>
+            <td>Experience and judgment moderately favor element B over A.</td>
+          </tr>            
+          <tr class="purple-text">
+            <td>1</td>
+            <td>Equal Importance</td>
+            <td>A and B contribute equally to the objective</td>
+          </tr>
+          <tr class="purple-text">
+            <td>3</td>
+            <td>Moderate Importance</td>
+            <td>Experience and judgment moderately favor element A over B.</td>
+          </tr>
+          <tr class="purple-text">
+            <td>5</td>
+            <td>Strong Importance</td>
+            <td>Experience and judgment strongly favor A over B.</td>
+          </tr>
+          <tr class="purple-text">
+            <td>7</td>
+            <td>Very strong Importance</td>
+            <td>A is favored very strongly over B; its dominance is demonstrated in practice.</td>
+          </tr>         
+          <tr class="purple-text">
+            <td>9</td>
+            <td>Extreme Importance</td>
+            <td>The evidence favoring A over B is of the highest possible order of affirmation.</td>
+          </tr>          
+        </tbody>
+      </table>
+            
+        <br> <br>       
+        
+        <div class="row container">
+        <form action="AHPServlet" method="post" class="col s12">
+            <div class="row">
+                <div class="section">
+                <h5 class="purple-text center"> How important are technical skills with respect to non-technical ones? </h5>
+                <div class="input-field col s12">
+                    <input type="text" name="technontech" id="technontech" required>
+                </div>
+                </div>
+                
+                <div class="divider"></div>  <br> <br>    
+                
+                <div class="section">
+                <h5 class="purple-text center"> How important are non-technical skills with respect to work experience? </h5>
+                <div class="input-field col s12">
+                <input type="text" name="nontechexp" id="nontechexp" required>
+                </div>
+                </div>
+                
+                <div class="divider"></div>  <br> <br>    
+                
+                <div class="section">
+                <h5 class="purple-text center"> How important are technical skills with respect to work experience? </h5>
+                <div class="input-field col s12">
+                <input type="text" name="techexp" id="techexp" required>                
+                </div>
+                </div>
+            
+                <div class="divider"></div>  <br> <br>    
+                
+            <button class="btn waves-effect waves-light right green accent-4" type="submit" name="action"> Submit and continue
+                <i class="material-icons right"></i>
+            </button>
+                </div>
+        </form>
+        </div>
+        
+    </body>
+</html>
